@@ -43,7 +43,8 @@ def sol_3_dict_check(sol_3_dict):
         print('Nice job! That looks right to me!')
     elif sol_3_dict['Which column should you create a dummy variable for?'] != s.sol_3_dict['Which column should you create a dummy variable for?']:
         print("Oops! That is not the column you should be using to create a dummy variable. Try again.")
-    elif sol_3_dict['How many new dummy columns do you get when creating dummy variables?'] != s.sol_3_dict['How many new dummy columns do you get when creating dummy variables?']:
+    #elif sol_3_dict['How many new dummy columns do you get when creating dummy variables?'] != s.sol_3_dict['How many new dummy columns do you get when creating dummy variables?']:
+    elif sol_3_dict['When you use the default settings for creating dummy variables, how many are created??'] != s.sol_3_dict['When you use the default settings for creating dummy variables, how many are created?']:
         print("Oops! Though you could get that number of dummy variables, that is not what you get using the default setting using one hot encoding or pandas `get_dummies` encoding. Try again.")
     elif sol_3_dict['What happens with the nan values?'] != s.sol_3_dict['What happens with the nan values?']:
         print("Oops! Though that could happen with the NaN values, that is not the default when working with pandas.")
